@@ -5,6 +5,8 @@ Editor de design em camadas que roda no navegador, de código aberto. Três nív
 
 > *An open-source, in-browser layered design editor: layout, image and vector editing in one document. UI and code comments are currently in Portuguese; translations and contributions are welcome.*
 
+![O editor do AllDesign com um carrossel de 4 slides aberto](docs/screenshots/editor.png)
+
 **Estado:** em desenvolvimento inicial (v0.0.1). Funciona, tem testes, mas a interface e o formato do arquivo ainda podem mudar.
 
 ## O que dá para fazer
@@ -15,6 +17,14 @@ Editor de design em camadas que roda no navegador, de código aberto. Três nív
 - Exportar PNG, JPG, WebP e SVG, um slide ou todos, em ZIP.
 - Salvar e abrir o formato `.alldesign`: um pacote em texto (`documento.json`), legível e editável por pessoas, scripts e IAs.
 - Linha de comando (`bin/design`) para criar, alterar e exportar documentos sem abrir o editor.
+
+## Modelos incluídos
+
+Feitos com o próprio AllDesign (`bin/design novo` + `bin/design exportar`):
+
+| Carrossel, kit escuro | Post, kit claro | Story, kit editorial |
+|---|---|---|
+| <img src="docs/screenshots/modelo-escuro-capa.png" width="240" alt="Capa de carrossel no kit escuro"> | <img src="docs/screenshots/modelo-claro-post.png" width="240" alt="Post quadrado no kit claro"> | <img src="docs/screenshots/modelo-editorial-story.png" width="135" alt="Story no kit editorial"> |
 
 ## Como rodar
 
@@ -55,7 +65,7 @@ Para criar um kit de estilo, veja `src/motor/kits.ts`. O formato do arquivo est�
 
 ## Contribuir
 
-Issues e pull requests são bem-vindos. Antes de abrir um PR, rode `npm run typecheck` e `npm test`.
+Issues e pull requests são bem-vindos. Veja o [guia de contribuição](CONTRIBUTING.md). Antes de abrir um PR, rode `npm run typecheck` e `npm test`.
 
 ## Licença
 

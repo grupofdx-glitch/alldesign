@@ -1,0 +1,3 @@
+#!/bin/sh
+# AllDesign para agentes: cria e altera documentos .alldesign sem abrir o editor. Veja `bin/design ajuda`.
+exec node --no-warnings "$(dirname "$0")/../src/cli.ts" "$@"
